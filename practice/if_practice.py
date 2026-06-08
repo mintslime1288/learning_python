@@ -12,3 +12,4 @@ if age>=18 and registration:
 else:
     print("입장 할 수 없습니다.")
 
+
