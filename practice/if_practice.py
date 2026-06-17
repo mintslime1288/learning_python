@@ -12,6 +12,6 @@ if age>=18 and registration:
 else:
     print("입장 할 수 없습니다.")
 
-score=int(input("점수를 입력하세요."));
-massage="success" if score >=60 else "failure";
-print(massage)
+score=int(input("점수를 입력하세요. : "));
+massage="successs" if score >=60 else "failure";
+print(massage);
