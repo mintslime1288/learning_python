@@ -1,11 +1,11 @@
-'''treehits=0;
+treehits=0;
 while treehits<10:
     treehits=treehits+1
     print("나무를 %d번 찍었습니다." % treehits);
     if treehits==10:
-        print("나무 넘어갑니다.");'''
+        print("나무 넘어갑니다.");
 
-'''prompt="""
+prompt="""
 1. add
 2. del
 3.list
@@ -15,7 +15,7 @@ enter number : """;
 number=0;
 while number !=4:
     print(prompt)
-    number=int(input())'''
+    number=int(input())
 
 '''coffee=10;
 money=300;
@@ -25,23 +25,24 @@ while money:
     print("남은 커피의 양은 %d개 입니다."%(coffee))
     if coffee ==0:
         print("남은 커피의 갯수가 없습니다. 판매를 중지합니다.")
-        break'''
+        break;'''
 
-money=int(input("얼마를 가지고 있습니까?"));
-americano=10;
-latte=10;
-cappucchino=10;
-espresso=10;
-while money:
-    print("커피 자판기 오픈했습니다. 무엇을 주문하시겠습니까? : ")
-    print("1. 아메리카노 - 300원\n2. 라떼 - 400원\n3. 카푸치노 - 400원\n4. 에스프레소. - 200원\n  ")
-    dicision=int("무엇을 주문하시겠습니까? : ")
-    if dicision == 1:
-        print("아메리카노 주문 받았습니다.")
-        americano=americano-1
-        print("아메리카노 %d개 남았습니다."%(americano))
-    elif dicision ==2:
-        print("라떼 주문 받았습니다.")
-        latte=latte-1
-        print("라떼 %d")
-    
+coffee=10;
+while True:
+    money =int(input("돈을 넣어 주세요: "))
+    if money==300:
+        print("커피를 줍니다.")
+        coffee=coffee-1
+    elif money>300:
+        print("거스름돈 %d원을 주고 커피를 줍니다." %(money-300))
+    else:
+        print("돈이 부족합니다, 돈을 다시 반환하고 커피를 주지 않습니다.")
+        print("남은 커피의 양은 %d개 입니다."%(coffee))
+    if coffee==0:
+        print("커피가 모자랍니다. 판매를 중지합니다.")
+        break;
+
+
+
+
+ 
